@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>컴플레인 작성하기</h1>
+    <form action="{% url 'create' %}">
+        <input type="text" placeholder="제목" name="title" /></br>
+        <input type="file" placeholder="영수증 사진" name="receipt" /></br>
+        <textarea placeholder="내용" name="content"></textarea></br>
+        <input type="submit" value="제출"/>
+    </form>
+</body>
+</html>
